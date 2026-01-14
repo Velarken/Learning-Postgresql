@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include('./partials/head.ejs') %>
+<body>
+    <%- include('./partials/nav.ejs') %>
+    <h1>Username Search Results</h1>
+    <% data.forEach(row => { %>
+        <p> <%= row.username %></p>
+    <% }) %>
+</body>
+</html>

@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include('./partials/head.ejs') %>
+<body>
+    <%- include('./partials/nav.ejs') %>
+    <form action="/search/:username" method="GET">
+        <label for="username">Username: </label>
+        <input type="text" name="username" id="username" required>
+        <button>Search</button>
+    </form>
+</body>
+</html>
