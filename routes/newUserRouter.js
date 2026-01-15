@@ -15,5 +15,6 @@ newUserRouter.post('/new',newUserController.createUsernamePost);
 newUserRouter.get('/delete', (req,res) => {
     res.render('deleteUser')
 })
+newUserRouter.post('/delete', newUserController.deleteUserPost)
 
 module.exports = newUserRouter;
