@@ -5,7 +5,11 @@
     <%- include('./partials/nav.ejs') %>
     <h1>Username Search Results</h1>
     <% data.forEach(row => { %>
-        <p> <%= row.username %></p>
+        <% if (!row.username) { %>
+            <p>Sorry, nothing found matching your search.</p> 
+        <% } else { %>
+            <p> <%= row.username %> </p>
+        <% } %>
     <% }) %>
 </body>
 </html>

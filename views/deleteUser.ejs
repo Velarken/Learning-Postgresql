@@ -4,7 +4,7 @@
 <body>
     <%- include('./partials/nav.ejs') %>
     <h1>Delete Users</h1>
-    <form action="">
+    <form action="/delete" method="post">
         <label for="username">Username:</label>
         <input type="text" name="username" id="username" required>
         <button>Delete User</button>
